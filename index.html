@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Static Assets Demo</title>
+		<style>
+			body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial; padding: 2rem; background:#f7f7fb; color:#111 }
+			.grid { display:flex; gap:1.5rem; flex-wrap:wrap }
+			.card { background:#fff; border:1px solid #e6e6ef; padding:1rem; border-radius:8px; width:280px; box-shadow:0 1px 2px rgba(0,0,0,0.03) }
+			img { max-width:100%; height:auto; display:block }
+			.caption { margin-top:0.5rem; font-size:0.9rem; color:#555 }
+		</style>
+	</head>
+	<body>
+		<h1>Static HTML with Local Asset Images</h1>
+		<p>This demo shows <code>&lt;img src=&quot;...&quot;&gt;</code> pointing to local assets in the project.</p>
+
+		<div class="grid">
+			<div class="card">
+				<img src="./images/photo1.svg" alt="Sample photo (SVG)" width="256" height="160">
+				<div class="caption">Image: <code>images/photo1.svg</code></div>
+			</div>
+
+			<div class="card">
+				<img src="./icons/logo.svg" alt="Logo (SVG)" width="160" height="160">
+				<div class="caption">Image: <code>icons/logo.svg</code></div>
+			</div>
+
+			<div class="card">
+				<img src="./grupo-gr-logo.png" alt="Grupo GR Logo" width="160" height="160" loading="lazy">
+				<div class="caption">Image: <code>grupo-gr-logo.png</code></div>
+			</div>
+		</div>
+
+		<footer style="margin-top:2rem; font-size:0.9rem; color:#666">Open this file directly in your browser or serve the folder with a simple HTTP server.</footer>
+	</body>
+</html>
